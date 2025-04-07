@@ -14,7 +14,7 @@ function! AsteriskNormal() abort
 endfunction
 function! AsteriskVisual() abort
     let old=@"
-    normal! gvy
+    normal! y
     let @/="\\V\\C".escape(@", '/\')
     set hlsearch
     let @"=old
